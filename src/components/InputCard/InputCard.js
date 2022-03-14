@@ -1,12 +1,10 @@
 import React, { useContext, useState } from "react";
 import { Clear } from "@material-ui/icons";
-
 import dataApi from "../../utils/dataApi";
-
 import "./styles.scss";
 
 export default function InputCard({ setOpen, listId, type }) {
-  const { addMoreCard, addMoreList } = useContext(dataApi);
+  const { addMoreCard } = useContext(dataApi);
   const [title, setTitle] = useState("");
 
   const handleOnChange = (e) => {
@@ -16,9 +14,10 @@ export default function InputCard({ setOpen, listId, type }) {
   const handleBtnConfirm = () => {
     if (type === "card") {
       addMoreCard(title, listId);
-    } else {
-      addMoreList(title);
     }
+    // else {
+    //   addMoreList(title);
+    // }
     setOpen(false);
     setTitle("");
   };
@@ -30,11 +29,7 @@ export default function InputCard({ setOpen, listId, type }) {
           onChange={handleOnChange}
           value={title}
           className="input-text"
-          placeholder={
-            type === "card"
-              ? "Enter a title of this card..."
-              : "Enter list title"
-          }
+          placeholder={"Enter a title of this card..."}
           autoFocus
         />
       </div>

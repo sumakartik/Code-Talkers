@@ -1,11 +1,8 @@
 import React, { useContext, useState } from "react";
-
 import TextareaAutosize from "react-textarea-autosize";
 import { DeleteOutline } from "@material-ui/icons";
 import { Draggable } from "react-beautiful-dnd";
-
 import dataApi from "../../utils/dataApi";
-
 import "./styles.scss";
 
 export default function Card({ card, index, listId }) {

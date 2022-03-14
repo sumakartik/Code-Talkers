@@ -1,10 +1,8 @@
 import React from "react";
 import { Draggable, Droppable } from "react-beautiful-dnd";
-
-import Title from "./components/title";
-import Card from "./components/Card";
-import InputContainer from "./components/InputContainer";
-
+import Title from "../Title/Title";
+import Card from "../Card/Card";
+import InputContainer from "../InputContainer/InputContainer";
 import "./styles.scss";
 
 export default function List({ list, index }) {

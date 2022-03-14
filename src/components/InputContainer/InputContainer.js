@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Collapse } from "@material-ui/core";
-
-import InputCard from "../components/InputCard";
-
+import InputCard from "../InputCard/InputCard";
 import "./styles.scss";
 
 export default function InputContainer({ listId, type }) {
