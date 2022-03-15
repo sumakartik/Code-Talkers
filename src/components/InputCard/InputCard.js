@@ -4,7 +4,7 @@ import dataApi from "../../utils/dataApi";
 import "./styles.scss";
 
 export default function InputCard({ setOpen, listId, type }) {
-  const { addMoreCard } = useContext(dataApi);
+  const { addMoreCard, addMoreList } = useContext(dataApi);
   const [title, setTitle] = useState("");
 
   const handleOnChange = (e) => {
@@ -14,10 +14,9 @@ export default function InputCard({ setOpen, listId, type }) {
   const handleBtnConfirm = () => {
     if (type === "card") {
       addMoreCard(title, listId);
+    } else {
+      addMoreList(title);
     }
-    // else {
-    //   addMoreList(title);
-    // }
     setOpen(false);
     setTitle("");
   };
