@@ -24,6 +24,7 @@ const initialState = () => {
 export default function Home() {
   const [data, setData] = useState(initialState);
 
+
   const addMoreCard = (title, listId) => {
     if (!title) {
       return;
