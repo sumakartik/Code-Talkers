@@ -3,12 +3,7 @@ const data = {
     "list-1": {
       id: "list-1",
       title: "To do",
-      cards: [
-        {
-          id: "1",
-          title: "vim practice",
-        },
-      ],
+      cards: [],
     },
     "list-2": {
       id: "list-2",
