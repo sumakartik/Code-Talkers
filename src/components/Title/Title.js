@@ -59,6 +59,7 @@ export default function Title({ title, listId }) {
                 <li
                   onClick={() => {
                     setOpenOptions(!openOptions);
+                    
                     deleteList(listId);
                   }}
                 >

@@ -36,6 +36,11 @@ export default function List({ list, index }) {
               </Droppable>
             </div>
             <InputContainer listId={list.id} type="card" />
+            {/* <button
+              onClick={() => {
+                list(index, list);
+              }}
+            ></button> */}
           </div>
         </div>
       )}
