@@ -4,7 +4,6 @@ import Home from "./Home/Home";
 import "./index.scss";
 
 export default function App() {
-  
   return (
     <div>
       <Navbar />
