@@ -1,0 +1,11 @@
+.wrapper {
+    width: 100%;
+    margin:  auto;
+    padding: 30px;
+    display: flex;
+    min-height: calc(100vh);
+    overflow-y: auto;
+    background-color: gray;
+    justify-items: center;
+    overflow: auto;
+}
