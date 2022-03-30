@@ -28,7 +28,11 @@ export default function InputCard({ setOpen, listId, type }) {
           onChange={handleOnChange}
           value={title}
           className="input-text"
-          placeholder={"Enter a title of this card..."}
+          placeholder={
+            type === "card"
+              ? "Enter a title of this card..."
+              : "Enter list title"
+          }
           autoFocus
         />
       </div>

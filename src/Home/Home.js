@@ -118,9 +118,9 @@ export default function Home() {
 
   const deleteList = (listId) => {
     const lists = data.lists;
-    const listIds = data.listIds;
+    const listIds = data.listId;
 
-    delete lists[listId];
+    delete lists[listIds];
 
     listIds.splice(listIds.indexOf(listId), 1);
 
