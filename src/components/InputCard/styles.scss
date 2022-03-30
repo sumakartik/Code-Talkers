@@ -1,5 +1,5 @@
 .input-card {
-  background-color: #fac60f;
+  background-color: steelblue;
   padding: 1rem;
   border-radius: 5px;
 
@@ -41,7 +41,7 @@
       margin-right: 0.5rem;
 
       &:hover {
-        background-color: #e22bba;
+        background-color: gray;
       }
     }
 
@@ -53,7 +53,7 @@
       svg {
         transition: color 0.3s;
         &:hover {
-          color: #e22bba;
+          color: gray;
         }
       }
     }

@@ -7,7 +7,7 @@
 
   margin: 0.5rem 0 0;
 
-  background: #fac60f;
+  background: steelblue;
   border-radius: 3px;
   border-bottom: 1px solid rgb(0, 0, 0);
 
@@ -47,7 +47,7 @@
         
 
         &:hover {
-          color: #e22bba;
+          color: gray;
         }
       }
     }
@@ -77,7 +77,7 @@
     transition: border-color 0.2s;
 
     &:focus {
-      border: 1px solid #e22bba;
+      border: 1px solid slategray;
     }
   }
 }
