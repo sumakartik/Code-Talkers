@@ -14,13 +14,19 @@ describe("App Component", () => {
   });
 
   //They see a list ToDo
-  it("Should find 1 lists on the page with a Header of ToDO", () => {});
+  it("Should find 1 lists on the page with a Header of ToDO", () => {
+    cy.findByRole("Container").contain("ToDO");
+  });
 
   //They see a list Doing
-  it("Should find 1 lists on the page with a Header of Doing", () => {});
+  it("Should find 1 lists on the page with a Header of Doing", () => {
+    cy.findByRole("Container").contain("Doing");
+  });
 
   //They see a list Done
-  it("Should find 1 lists on the page with a Header of Done", () => {});
+  it("Should find 1 lists on the page with a Header of Done", () => {
+    cy.findByRole("Container").contain("Done");
+  });
 
   //They see a login button on right side top of page
   it("Should find a button with Login", () => {
@@ -43,7 +49,9 @@ describe("App Component", () => {
   //when they add text
   //and they click the add card button
   //then they should see a new card
-  it("Should be able to add a card into a list", () => {});
+  it("Should be able to add a card into a list", () => {
+    cy.get("button").contain("+ Add Card").click();
+  });
 
   //when they drag a card from one list to another
   //it moves
